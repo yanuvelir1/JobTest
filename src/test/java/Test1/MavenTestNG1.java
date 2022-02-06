@@ -13,14 +13,16 @@ public class MavenTestNG1 {
         System.setProperty("webdriver.chrome.driver", "chromedriver");
         WebDriver driver=new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://google.com");
+        driver.get("https://stylus.ua/");
         System.out.println(driver.getTitle());
 
-        String title = driver.getTitle();
+        //String title = driver.getTitle();
 
-        Assert.assertEquals(title, "Google");
+        //Assert.assertEquals(title, "Google");
 
         driver.quit();
+
+
 
     }
 }
